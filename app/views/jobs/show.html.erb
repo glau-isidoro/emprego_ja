@@ -9,4 +9,7 @@
     <dt>Localização:</dt>
     <dd><%= @job.location %></dd>
   </dl>
+  <% if @job.featured? %>
+    <strong> Vaga em Destaque </strong>
+  <% end %>
 <%= link_to "Voltar", root_path %>

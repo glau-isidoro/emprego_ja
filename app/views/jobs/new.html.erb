@@ -20,6 +20,9 @@
     <%= f.label :description, "Descrição Completa" %>
     <%= f.text_field :description %>
   </div>
-
+  <div>
+    <%= f.label :featured, "Destaque" %>
+    <%= f.check_box :featured%>
+  </div>ß
   <%= f.submit "Criar Vaga" %>
 <% end %>
