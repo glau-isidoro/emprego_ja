@@ -1,0 +1,9 @@
+<% @jobs.each do |job| %>
+<dl>
+  <dt><h1><%= job.title %></h1></dt>
+  <dt>Empresa:</dt>
+  <dd><%= job.company %></dd>
+  <dt>Localização:</dt>
+  <dd><%= job.location %></dd>
+</dl>
+<% end %>
