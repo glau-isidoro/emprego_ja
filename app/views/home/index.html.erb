@@ -1,6 +1,6 @@
 <% @jobs.each do |job| %>
 <dl>
-  <dt><h1><%= job.title %></h1></dt>
+  <dt><h1><%= link_to job.title, job %></h1></dt>
   <dt>Empresa:</dt>
   <dd><%= job.company %></dd>
   <dt>Localização:</dt>
