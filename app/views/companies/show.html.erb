@@ -7,4 +7,14 @@
     <dt>Email:</dt>
     <dd><%= @company.mail %></dd>
   </dl>
+
+  <h1>Vagas:</h1>
+    <% if @company.jobs.empty? %>
+      <%= "Nenhuma vaga disponível" %>
+    <% else %>
+      <% @company.jobs.each do |job| %>
+        <%= render partial: 'jobs/job_short', locals:{ job: job } %>
+      <% end %>
+    <% end %>
+
 <%= link_to "Voltar", root_path %>
